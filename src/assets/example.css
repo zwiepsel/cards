@@ -6,12 +6,12 @@
   padding: 0;
 }
 html,
+
+
 body {
-  height: 100%;
-}
-body {
-  background-color: #45a173;
-  color: #333;
+  background-image: url("images/table-background.jpg");
+  background-size: 100%;
+  color: white;
   font-family: 'Open Sans', sans-serif;
   -webkit-user-select: none;
   -moz-user-select: none;

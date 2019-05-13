@@ -1,4 +1,27 @@
 <div id="container" #container>
-<!--<div>Press new game to start</div>-->
-    <!--<button class="button">test button</button>-->
+    <div *ngIf="showButtons" class="visibleFullscreen">
+        <button class="sleeve player1" [ngClass]="{active: activePlayer === 1}">
+                Player 1
+            <span class="insert player1">0 wins</span>
+        </button>
+        <button class="sleeve player2" [ngClass]="{active: activePlayer === 3}">
+                Player 3
+            <span class="insert player2">0 wins</span>
+        </button>
+        <button class="sleeve player3" [ngClass]="{active: activePlayer === 4}">
+                Player 4
+            <span class="insert player3">0 wins</span>
+        </button>
+        <button class="sleeve player4" [ngClass]="{active: activePlayer === 2}">
+                Player 2
+            <span class="insert player4">0 wins</span>
+        </button>
+    </div>
+    <div class="winning-player"  *ngIf="finished">
+    <h1>Speler {{ this.winningPlayer }} heeft gewonnen</h1>
+        <div>
+        <p>Druk op de nieuw spel om nog een potje te spelen</p>
+        <a class="button1"  (click)="resetGame()" >Nieuw spel</a>
+        </div>
+    </div>
 </div>

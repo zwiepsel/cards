@@ -6,3 +6,32 @@
     src: url(assets/fonts/CoffeeTin.ttf) format("truetype");
   }
 
+  * {
+    font-family: 'Helvetica';
+   }
+
+   
+  .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    display: none;
+  }
+
+  .wrongResolution {
+    visibility: hidden;
+  }
+  //  and (min-height: 800p)
+  @media (min-width: 1000px){
+    .overlay {
+      display: inherit;
+      z-index: 5;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .wrongResolution {
+      visibility: inherit;
+      z-index: 1;
+      text-align: center;
+      margin-top: 50%;
+    }
+  }

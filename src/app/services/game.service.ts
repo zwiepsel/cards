@@ -6,7 +6,6 @@ export class GameService {
 
     startNewGame() {
         this.newGame.emit();
-        console.log('emit action')
         return this.newGame;
     }
 }

@@ -1,11 +1,167 @@
-.button {
-    width: 100px;
-    height:50px;
-    position:relative;
-    top:30%;
-    left:150%;
+
+.sleeve.player2
+{
+    left: -69%;
+    margin-top: 50%;
+    bottom: 254px;
+    position: relative;
+    background: transparent;
+    border: 0;
+    padding: 0 40px 0 15px;
+    border: 1px solid #aaa;
+    border-radius: 4px 200px 0px 4px;
+    background: linear-gradient(to bottom, rgba(225,225,225,1) 0%,rgba(229,229,229,1) 100%);
+    font-size: 24px;
+    color: #333;
+    text-shadow: 0px 1px 3px #fff;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    min-width: 170px;
+}
+
+.sleeve.player1
+{
+    left: 34%;
+    margin-top: 50%;
+    bottom: 254px;
+    position: relative;
+    background: transparent;
+    border: 0;
+    padding: 0 40px 0 15px;
+    border: 1px solid #aaa;
+    border-radius: 4px 200px 0px 4px;
+    background: linear-gradient(to bottom, rgba(225,225,225,1) 0%,rgba(229,229,229,1) 100%);
+    font-size: 24px;
+    color: #333;
+    text-shadow: 0px 1px 3px #fff;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    min-width: 170px;
+}
+
+.sleeve.player3
+{
+  left: -58%;
+  margin-top: 50%;
+  bottom: 505px;
+  position: relative;
+  background: transparent;
+  border: 0;
+  padding: 0 40px 0 15px;
+  border: 1px solid #aaa;
+  border-radius: 4px 200px 0px 4px;
+  background: linear-gradient(to bottom, rgba(225,225,225,1) 0%,rgba(229,229,229,1) 100%);
+  font-size: 24px;
+  color: #333;
+  text-shadow: 0px 1px 3px #fff;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  min-width: 170px;
+}
+
+.sleeve.player4
+{
+  left: -6%;
+  margin-top: 50%;
+  bottom: 367px;
+  position: relative;
+  background: transparent;
+  border: 0;
+  padding: 0 40px 0 15px;
+  border: 1px solid #aaa;
+  border-radius: 4px 200px 0px 4px;
+  background: linear-gradient(to bottom, rgba(225,225,225,1) 0%,rgba(229,229,229,1) 100%);
+  font-size: 24px;
+  color: #333;
+  text-shadow: 0px 1px 3px #fff;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  min-width: 170px;
+}
 
 
-    z-index:60;
+.insert
+{
+  position: absolute;
+  left: 10px;
+  top: 3%;
+  display: block;
+  z-index: -100;
+  width: 100%;
+  height: 94%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+  font-family: 'Oswald';
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 0 1px 0px rgba(0,0,0,0.6);
+  border-radius: 2px;
+  text-align: right;
+  padding-right:10px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.50) inset, 2px 2px 5px rgba(0,0,0,0.5);
+  transition: all 1s ease-in-out;
+  border-right: 1px dotted rgba(0,0,0,0.5);
+}
+.active {
+  background: rgb(235, 26, 18) !important;
+  color: white !important;
+}
 
+.sleeve:hover .insert
+{
+  text-align: right;
+  width: 150%;
+  transition: all 1s ease-in-out;
+}
+
+.insert.player1
+{
+  background: linear-gradient(to bottom, rgba(73,125,193,1) 0%,rgba(39,71,114,1) 100%);
+}
+
+.insert.player2
+{
+  background: linear-gradient(to bottom, rgba(169,228,247,1) 0%,rgba(15,180,231,1) 100%);
+}
+
+.insert.player3
+{
+  
+  background: linear-gradient(to bottom, rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%);
+}
+
+.visibleFullscreen{
+    @media screen and (min-width: 401px) and (max-width: 1800px) {
+        visibility: hidden;
+    }
+}
+
+.winning-player {
+  position: relative;
+  text-align: center;
+  left: -200px;
+  top: 0px;
+  margin-bottom: 1700px;
+}
+
+a.button1 {
+  display:inline-block;
+  padding:0.2em 1.2em;
+  border:0.1em solid #FFFFFF;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+a.button1:hover {
+  color:#000000;
+  background-color:#FFFFFF;
+  }
+
+@media all and (max-width:30em){
+   a.button1{
+  display:block;
+  margin:0.4em auto;
+  }
 }

@@ -1,7 +1,23 @@
 <app-navbar></app-navbar>
-<div style="text-align:center" >
-
+<div style="text-align:center" *ngIf="homescreen">
+    <h1>Spelregels</h1>
+      <div class="explanation">
+        <p>Spelers leggen om de beurt een kaart af op de aflegstapel door <b>dubbel</b> te klikken op de kaart.</p>
+        <p> Deze kaart moet of hetzelfde symbool hebben ( ♥ ♣ ♦ ♠ ) of hetzelfde getal (2 t/m aas).</p>
+        <p>Als een speler niet kan pakt hij een kaart van de deel-stapel door hier <b>dubbel</b> op te klikken.</p>
+        <p>Wanneer een speler geen kaarten meer heeft is het spel voorbij en wordt de winnaar bekend gemaakt.</p>
+      </div>
+    <p>Druk op nieuw spel om het spel te starten.</p>
+    <p><b>Veel plezier!</b></p>
 </div>
 <div>
-  <app-cards></app-cards>
+  <app-cards [skipTurn]="skipTurn"  (playerChanged)="checkPlayer($event)"  (gameStarted)="gameStarted()" (gameOver)="setWinningPlayer()"></app-cards>
+</div>
+<div class="footer navbar-fixed-bottom">
+  <span class="action-button-field">
+    <div class="center" >
+        <span id="game-turn-display">Huidige speler:  {{ activePlayer }}</span>
+        <a class="button1" (click)="doSkipTurn()" [ngClass]="{bouncy: noMoves}">Sla beurt over</a>
+    </div>
+  </span>
 </div>

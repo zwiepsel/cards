@@ -10,7 +10,11 @@ html,
 
 body {
   background-image: url("images/table-background.jpg");
-  background-size: 100%;
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-size: cover; 
+  background-color: #464646; 
   color: white;
   font-family: 'Open Sans', sans-serif;
   -webkit-user-select: none;
@@ -24,8 +28,8 @@ body {
 }
 #container {
   position: fixed;
-  top: calc(50% + 1.5rem);
-  left: 50%;
+  top: 85%;
+  left: 65%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   -moz-transform: translate3d(-50%, -50%, 0);
   -o-transform: translate3d(-50%, -50%, 0);
@@ -387,3 +391,4 @@ body {
     font-size: 125%;
   }
 }
+

@@ -8,5 +8,25 @@ import {GameService} from './services/game.service';
   providers: [GameService]
 })
 export class AppComponent {
-  title = 'cards';
+  public activePlayer = 1;
+  public skipTurn = 0;
+  public homescreen = true;
+  public gameOver = false;
+
+  gameStarted(){
+    this.homescreen = false;
+  }
+
+  checkPlayer(activePlayer){
+    this.activePlayer = activePlayer;
+  }
+
+  doSkipTurn(){
+    this.skipTurn = this.skipTurn + 1;
+  }
+
+  setWinningPlayer(){
+    console.log('hoofscherm game over')
+    this.gameOver = true;
+  }
 }

@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { CardsComponent } from './cards/cards.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -18,7 +17,7 @@ const appRoutes: Routes = [
     NavbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

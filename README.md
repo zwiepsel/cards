@@ -15,6 +15,8 @@ This project was made for an assessment and made use of the deck-of-cards librar
 
 # How to deploy
 
+Run npm install first to download the needed packages
+
 ## Development server
 
   
